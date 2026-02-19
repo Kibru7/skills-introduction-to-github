@@ -61,6 +61,15 @@ function deleteTask(id) {
     renderTasks();
 }
 
+function escapeHtml(unsafe) {
+    return unsafe
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+}
+
 function formatDateTime(dateTimeString) {
     const date = new Date(dateTimeString);
     const options = { 
@@ -84,7 +93,7 @@ function renderTasks() {
     tasksContainer.innerHTML = tasks.map(task => `
         <div class="task-item ${task.completed ? 'completed' : ''}">
             <div class="task-info">
-                <div class="task-description">${task.description}</div>
+                <div class="task-description">${escapeHtml(task.description)}</div>
                 <div class="task-time">📅 ${formatDateTime(task.scheduleTime)}</div>
             </div>
             <div class="task-actions">

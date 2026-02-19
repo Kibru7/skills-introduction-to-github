@@ -2,6 +2,23 @@
 
 _Get started using GitHub in less than an hour._
 
+## 📅 Task Schedule Application
+
+This repository now includes a simple task schedule application that helps you manage and organize your tasks with scheduled times.
+
+### Features
+
+- ✅ Add tasks with scheduled date and time
+- 📋 View all scheduled tasks sorted by date
+- ✓ Mark tasks as complete/incomplete
+- 🗑️ Delete tasks
+- 💾 Automatic saving to browser local storage
+- 📱 Responsive design
+
+### Usage
+
+Simply open `index.html` in your web browser to start using the task scheduler. No installation or build process required!
+
 ## Welcome
 
 People use GitHub to build some of the most advanced technologies in the world. Whether you’re visualizing data or building a new game, there’s a whole community and set of tools on GitHub that can help you do it even better. GitHub Skills’ “Introduction to GitHub” exercise guides you through everything you need to start contributing in less than an hour.
